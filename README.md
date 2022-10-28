@@ -1,10 +1,10 @@
 # PGA-Net: Polynomial Global Attention Network with Mean Curvature Loss for Lane Detection
 
 - Related works
-<img src=./figures/related_work.png width="512x">
+    - <img src=./figures/related_work.png width="400x">
 
 - Overview of our PGA-Net
-<img src=./figures/overflow.png width="600x">
+    - <img src=./figures/overflow.png>
 
 ## 1.Dataset
 ### CULane
@@ -57,11 +57,11 @@ Download [LLAMAS](https://unsupervised-llamas.com/llamas/)
 - ### Result on three benchmark
     - Our method achieves **state-of-the-art** performance on two popular benchmarks (TuSimple and LLAMAS) and a most challenging benchmark (CULane) with faster speed (**>140fps**) and lightweight model size (**<3M**).
     - Visualization results on TuSimple (the first row), CULane (the middle row), and LLAMAS (the last row) datasets. Different lane instances are represented by different colors.
-    <img src=./demo/results.png width="1000px">
+        - <img src=./demo/results.png>
 
 - ### Grad-CAM with our PGA-Net
     - Grad-CAM visualization on the last layer of the ResNet backbone and the transformer encoder. (a) Visualization on Tusimple. (b) Visualization on CULane. (c) Visualization on LLAMAS. The encoder aggregates a lot of contextual information and constrains the attention features to the lane road even the lane with occluded.
-    <img src=./demo/gramcam.png width="512px">
+        - <img src=./demo/gramcam.png>
 
 - ### PGANet infers lane lines from **real vehicle cameras**
 The PGA-Net used in the following inference is only trained on the CULane dataset.
