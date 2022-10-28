@@ -1,7 +1,7 @@
 # PGA-Net: Polynomial Global Attention Network with Mean Curvature Loss for Lane Detection
 
 - Related works
-    - ![](./figures/related_work.png)
+    - <img src=./figures/related_work.png width="512x">
 
 - Overview of our PGA-Net
     - ![](./figures/overflow.png)
@@ -67,7 +67,7 @@ Download [LLAMAS](https://unsupervised-llamas.com/llamas/)
 The PGA-Net used in the following inference is only trained on the CULane dataset.
 
 - Complex road conditions
-    - <img src=./demo/complex_road.GIF width="350px">
+    - <img src=./demo/complex_road.GIF width="360px">
 
 - Simple road conditions
     - <img src=./demo/simple_road.GIF width="360px">
