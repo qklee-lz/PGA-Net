@@ -67,10 +67,9 @@ Download [LLAMAS](https://unsupervised-llamas.com/llamas/)
 The PGA-Net used in the following inference is only trained on the CULane dataset.
 
 - Complex road conditions
-    - ![](./demo/complex_road.GIF)
+    - <img src=./demo/complex_road.GIF width="350px">
 
 - Simple road conditions
-    # - ![](./demo/simple_road.GIF)
     - <img src=./demo/simple_road.GIF width="360px">
 
 ## 3.Codes
