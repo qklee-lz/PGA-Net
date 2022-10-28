@@ -1,9 +1,9 @@
 # PGA-Net: Polynomial Global Attention Network with Mean Curvature Loss for Lane Detection
 
-- Related works
+- ### Related works
 <img src=./figures/related_work.png width="400x">
 
-- Overview of our PGA-Net
+- ### Overview of our PGA-Net
 <img src=./figures/overflow.png>
 
 ## 1.Dataset
