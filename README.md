@@ -70,7 +70,8 @@ The PGA-Net used in the following inference is only trained on the CULane datase
     - ![](./demo/complex_road.GIF)
 
 - Simple road conditions
-    - ![](./demo/simple_road.GIF)
+    # - ![](./demo/simple_road.GIF)
+    - <img src=./demo/simple_road.GIF width="360px">
 
 ## 3.Codes
 Codes will be released after paper acceptance.
