@@ -6,7 +6,44 @@
 - ### Overview of our PGA-Net
 <img src=./figures/overflow.png>
 
-## 1.Dataset
+---
+## 1.HARDWARE & SOFTWARE
+
+Ubuntu 20.04
+
+CPU: 12700k
+
+GPU: 1 * 3090, 24G
+
+Python: 3.8.0
+
+Pytorch: 1.13.1+cu113
+
+---
+
+## 2.Installation
+### Clone this repository
+
+```Shell
+git clone https://github.com/qklee-lz/PGA-Net.git
+```
+
+---
+
+### Create a conda virtual environment
+```Shell
+conda create -n PGA-Net python=3.8 -y
+conda activate PGA-Net
+```
+### Install dependencies
+```Shell
+# install pytorch
+pip install torch==1.13.0 torchvision==0.12.0
+# install python packages
+python setup.py build develop
+```
+---
+## 3.Data preparation
 ### CULane
 
 Download [CULane](https://xingangpan.github.io/projects/CULane.html). Then extract them to `$CULANEROOT`. Create link to `data` directory.
@@ -53,7 +90,27 @@ python tools/generate_seg_tusimple.py --root $TUSIMPLEROOT
 Download [LLAMAS](https://unsupervised-llamas.com/llamas/)
 [Official Paper](https://openaccess.thecvf.com/content_ICCVW_2019/papers/CVRSUAD/Behrendt_Unsupervised_Labeled_Lane_Markers_Using_Maps_ICCVW_2019_paper.pdf) 
 
-## 2.Demo
+---
+## 4.Start
+### Train
+run
+```Shell
+python train.py [configs/config_file] --gpus [gpu_ids]
+```
+### Test
+run
+```Shell
+python test.py [configs/config_file] --gpus [gpu_ids]
+```
+
+### Inference
+run
+```Shell
+python inference.py [configs/config_file] --img images --load_from [pretrained_file] --savedir ./vis --gpus [gpu_ids]
+```
+---
+
+## 5.Demo
 - ### Result on three benchmark
     - Our method achieves **state-of-the-art** performance on two popular benchmarks (TuSimple and LLAMAS) and a most challenging benchmark (CULane) with faster speed (**>140fps**) and lightweight model size (**<3M**).
     - Visualization results on TuSimple (the first row), CULane (the middle row), and LLAMAS (the last row) datasets. Different lane instances are represented by different colors.
@@ -72,5 +129,9 @@ The PGA-Net used in the following inference is only trained on the CULane datase
 - Simple road conditions
     - <img src=./demo/simple_road.GIF width="360px">
 
-## 3.Codes
+---
+## 6.Codes 
 Codes will be released after paper acceptance.
+---
+## 7.Pretrained models
+Pretrained models will be released after paper acceptance.
