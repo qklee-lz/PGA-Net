@@ -19,7 +19,6 @@ Python: 3.8.0
 
 Pytorch: 1.13.1+cu113
 
----
 
 ## 2.Installation
 ### Clone this repository
@@ -28,7 +27,6 @@ Pytorch: 1.13.1+cu113
 git clone https://github.com/qklee-lz/PGA-Net.git
 ```
 
----
 
 ### Create a conda virtual environment
 ```Shell
@@ -42,7 +40,7 @@ pip install torch==1.13.0 torchvision==0.12.0
 # install python packages
 python setup.py build develop
 ```
----
+
 ## 3.Data preparation
 ### CULane
 
@@ -90,7 +88,7 @@ python tools/generate_seg_tusimple.py --root $TUSIMPLEROOT
 Download [LLAMAS](https://unsupervised-llamas.com/llamas/)
 [Official Paper](https://openaccess.thecvf.com/content_ICCVW_2019/papers/CVRSUAD/Behrendt_Unsupervised_Labeled_Lane_Markers_Using_Maps_ICCVW_2019_paper.pdf) 
 
----
+
 ## 4.Start
 ### Train
 run
@@ -108,7 +106,7 @@ run
 ```Shell
 python inference.py [configs/config_file] --img images --load_from [pretrained_file] --savedir ./vis --gpus [gpu_ids]
 ```
----
+
 
 ## 5.Demo
 - ### Result on three benchmark
@@ -129,9 +127,9 @@ The PGA-Net used in the following inference is only trained on the CULane datase
 - Simple road conditions
     - <img src=./demo/simple_road.GIF width="360px">
 
----
+
 ## 6.Codes 
 Codes will be released after paper acceptance.
----
+
 ## 7.Pretrained models
 Pretrained models will be released after paper acceptance.
