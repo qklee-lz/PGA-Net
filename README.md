@@ -91,18 +91,28 @@ Download [LLAMAS](https://unsupervised-llamas.com/llamas/)
 
 ## 4.Start
 ### Train
-run
+For training, run
 ```Shell
 python train.py [configs/config_file] --gpus [gpu_ids]
 ```
-### Test
-run
+For example, run
 ```Shell
-python test.py [configs/config_file] --gpus [gpu_ids]
+python train.py configs/PGA_Net_ResNet34_culane.py --gpus 0
 ```
 
+### Test
+For testing, run
+```Shell
+python test.py [configs/config_file]  --load_from [pretrained_file --gpus [gpu_ids]
+```
+For example, run
+```Shell
+python test.py configs/PGA_Net_ResNet34_culane.py --load_from checkpoint/PGA_Net_ResNet34_best.pth --gpus 0
+```
+
+
 ### Inference
-run
+To run inference on example images in ./images and save the visualization images in vis folder:
 ```Shell
 python inference.py [configs/config_file] --img images --load_from [pretrained_file] --savedir ./vis --gpus [gpu_ids]
 ```
