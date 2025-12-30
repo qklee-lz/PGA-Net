@@ -139,7 +139,25 @@ The PGA-Net used in the following inference is only trained on the CULane datase
 
 
 ## 6.Codes 
-Codes will be released after paper acceptance.
+This repository is built upon several open-source projects, including 
+[DETR](https://github.com/facebookresearch/detr), 
+[LSTR](https://github.com/liuruijin17/LSTR), 
+and [PolyLaneNet](https://github.com/lucastabelini/PolyLaneNet).
 
-## 7.Pretrained models
-Pretrained models will be released after paper acceptance.
+The full system was developed on industrial and internship servers, and thus this repository does not contain a fully consolidated version of the entire project. Nevertheless, we add the proposed core **Mean Curvature Loss** is included in `./code/mean_curvature_loss.py`.
+
+## 7. Citation
+```
+
+@article{li2023pga,
+  title={PGA-Net: Polynomial global attention network with mean curvature loss for lane detection},
+  author={Li, Qiankun and Yu, Xianwang and Chen, Junxin and He, Ben-Guo and Wang, Wei and Rawat, Danda B and Lyu, Zhihan},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={25},
+  number={1},
+  pages={417--429},
+  year={2023},
+  publisher={IEEE}
+}
+
+```
